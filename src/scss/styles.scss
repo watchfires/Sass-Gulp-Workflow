@@ -1,0 +1,112 @@
+@import 'variables';
+@import 'functions';
+
+// GLOBAL
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: $body-bg;
+  font-family: $main-font;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: $light-color;
+}
+
+.container {
+  max-width: $container;
+  margin: auto;
+  padding: 0 20px;
+}
+
+// HEADER
+
+header#main-header {
+  padding: 1em;
+  background: $primary-color;
+  color: set-text-color($primary-color);
+
+  h1 {
+    font-size: 40px;
+  }
+}
+
+// NAVIGATION
+
+nav#main-nav {
+  background: $secondary-color;
+  height: 40px;
+
+  ul {
+    list-style: none;
+    padding-top: 10px;
+  }
+
+  li {
+    display: inline;
+  }
+
+  a {
+    color: #ffffff;
+    padding-right: 40px;
+
+    &:hover {
+      color: #cccccc;
+    }
+  }
+}
+
+// SECTIONS
+
+.section {
+  padding: $section-padding;
+
+  h1 {
+    margin-bottom: 30px;
+  }
+}
+
+#section-a {
+  @extend .section;
+  background: $light-color;
+  color: set-text-color($light-color);
+}
+
+#section-b {
+  @extend .section;
+  background: $dark-color;
+  color: set-text-color($dark-color);
+}
+
+// BUTTONS
+
+.button {
+  padding: 10px 15px;
+  border-radius: 4px;
+}
+
+#button-a {
+  @extend .button;
+  background: darken($primary-color, 10%);
+  color: set-text-color($primary-color);
+
+  &:hover {
+    background: darken($primary-color, 20%);
+  }
+}
+
+#button-b {
+  @extend .button;
+  background: lighten($secondary-color, 10%);
+  color: set-text-color($secondary-color);
+
+  &:hover {
+    background: lighten($secondary-color, 20%);
+  }
+}

@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  background: #ffffff;
+  font-family: "Raleway";
+  text-align: center; }
+
+a {
+  text-decoration: none;
+  color: #f4f4f4; }
+
+.container {
+  max-width: 960px;
+  margin: auto;
+  padding: 0 20px; }
+
+header#main-header {
+  padding: 1em;
+  background: #008080;
+  color: #ffffff; }
+  header#main-header h1 {
+    font-size: 40px; }
+
+nav#main-nav {
+  background: #009a9a;
+  height: 40px; }
+  nav#main-nav ul {
+    list-style: none;
+    padding-top: 10px; }
+  nav#main-nav li {
+    display: inline; }
+  nav#main-nav a {
+    color: #ffffff;
+    padding-right: 40px; }
+    nav#main-nav a:hover {
+      color: #cccccc; }
+
+.section, #section-a, #section-b {
+  padding: 20px 20px 50px; }
+  .section h1, #section-a h1, #section-b h1 {
+    margin-bottom: 30px; }
+
+#section-a {
+  background: #f4f4f4;
+  color: #000000; }
+
+#section-b {
+  background: #333333;
+  color: #ffffff; }
+
+.button, #button-a, #button-b {
+  padding: 10px 15px;
+  border-radius: 4px; }
+
+#button-a {
+  background: #004d4d;
+  color: #ffffff; }
+  #button-a:hover {
+    background: #001a1a; }
+
+#button-b {
+  background: #00cdcd;
+  color: #ffffff; }
+  #button-b:hover {
+    background: #01ffff; }
